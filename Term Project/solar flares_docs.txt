@@ -1,0 +1,39 @@
+******* DATA1; 1969 FLARE DATA  (02/13/69 to 03/27/69) *******
+******* DATA2; 1978 FLARE DATA (08/19/78 to 12/23/78) *****
+
+1. TItle: Solar Flare database
+
+2. Source Information
+   -- Donor: Gary Bradshaw <gbradshaw@clipr.colorado.EDU>
+   -- Date: 3/89
+
+3. Past Usage:
+   -- Gary Bradshaw: (Class Attributes were collapsed to 0 and >0)
+   -- See the past-usage file for a note written by Gary Bradshaw
+
+4. Relevant Information:
+   -- The database contains 3 potential classes, one for the number of times a
+      certain type of solar flare occured in a 24 hour period.
+   -- Each instance represents captured features for 1 active region on the 
+      sun.
+   -- The data are divided into two sections. The second section (flare.data2)
+      has had much more error correction applied to the it, and has 
+      consequently been treated as more reliable.
+
+5. Number of Instances:  flare.data1: 323, flare.data2: 1066
+
+6. Number of attributes:  13 (includes 3 class attributes)
+
+7. Attribute Information:
+   1. Code for class (modified Zurich class)  (A,B,C,D,E,F,H)
+   2. Code for largest spot size              (X,R,S,A,H,K)
+   3. Code for spot distribution              (X,O,I,C)
+   4. Activity                                (1 = reduced, 2 = unchanged)
+   5. Evolution                               (1 = decay, 2 = no growth, 3 = growth)
+   6. Previous 24 hour flare activity code    (1 = nothing as big as an M1, 2 = one M1, 
+				3 = more activity than one M1)
+   7. Historically-complex                    (1 = Yes, 2 = No)
+   8. Did region become historically complex  (1 = yes, 2 = no) 
+      on this pass across the sun's disk
+   9. Area                                    (1 = small, 2 = large)
+  10. Area of the largest spot                (1 = <=5, 2 = >5)
