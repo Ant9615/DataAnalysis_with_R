@@ -25,15 +25,23 @@
 6. Number of attributes:  13 (includes 3 class attributes)
 
 7. Attribute Information:
-   1. Code for class (modified Zurich class)  (A,B,C,D,E,F,H)
-   2. Code for largest spot size              (X,R,S,A,H,K)
-   3. Code for spot distribution              (X,O,I,C)
-   4. Activity                                (1 = reduced, 2 = unchanged)
-   5. Evolution                               (1 = decay, 2 = no growth, 3 = growth)
-   6. Previous 24 hour flare activity code    (1 = nothing as big as an M1, 2 = one M1, 
-				3 = more activity than one M1)
-   7. Historically-complex                    (1 = Yes, 2 = No)
-   8. Did region become historically complex  (1 = yes, 2 = no) 
-      on this pass across the sun's disk
-   9. Area                                    (1 = small, 2 = large)
-  10. Area of the largest spot                (1 = <=5, 2 = >5)
+Class: Code for class (modified Zurich class), A,B,C,D,E,F,H로 구성
+LSP: Code for largest spot size, X,R,S,A,H,K로 구성
+SD: Code for spot distribution, X,O,I,C로 구성
+Activity: 1 = reduced, 2 = unchanged
+Evoluation: 1 = decay, 2 = no growth, 3 = growth
+Activity24: Previous 24 hour flare activity code (1 = nothing as big as an M1, 2 = one M1, 3 = more activity than one M1)
+HC: Historically-complex (1 = Yes, 2 = No)
+RHC: Did region become historically complex  (1 = yes, 2 = no) on this pass across the sun's disk
+Area: 1 = small, 2 = large
+ALS: Area of the largest spot (1 = <=5, 2 = >5)
+아래는 추가변수들이다.
+C_class: C-class flares production by this region in the following 24 hours (common flares); Number
+M_class: M-class flares production by this region in the following 24 hours (moderate flares); Number
+X_class: X-class flares production by this region in the following 24 hours (severe flares); Number
+
+
+
+
+
+ALS가 2 이상이 아니면 LSP가 X로 분류되고, 2이상이면 SD가 C,I 아니면 S로 C, I면 SD가 I면 A, 이외는 K로 분류되는 것을 볼 수 있다. 다음으로 테스트 데이터를 이용해서 예측률, 교차검증, 모델 정보를 알아보자.
